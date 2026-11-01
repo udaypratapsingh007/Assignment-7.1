@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6fb;
+  color: #333333;
+  margin: 20px;
+}
+
+h1 {
+  color: #1a3c6e;
+}
+
+/* Common style for all boxes */
+.box {
+  width: 300px;
+  background-color: #dbe7f7;
+  border-style: solid;
+  border-color: #1a3c6e;
+}
+
+.box h2 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+}
+
+.box p {
+  margin: 0;
+}
+
+/* Box 1: content-box (default). Total width = 300 + 20 padding + 4 border = 324px */
+.box-one {
+  box-sizing: content-box;
+  padding: 10px;
+  border-width: 2px;
+  margin: 10px;
+}
+
+/* Box 2: border-box. Total width stays 300px, padding and border are inside */
+.box-two {
+  box-sizing: border-box;
+  padding: 30px;
+  border-width: 8px;
+  margin: 30px;
+}
+
+/* Box 3: content-box. Total width = 300 + 40 padding + 10 border = 350px */
+.box-three {
+  box-sizing: content-box;
+  padding: 20px;
+  border-width: 5px;
+  margin: 20px;
+}
